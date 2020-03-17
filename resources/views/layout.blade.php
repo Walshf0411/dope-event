@@ -74,6 +74,10 @@
     <body>
         @yield('content')
 
+		<script>
+			const link = document.getElementById('nav-' + '{{ $view_name }}' + '-link');
+			link.classList.add('active');
+		</script>
 
         <script src="{{ asset('js/jquery.min.js') }}"></script>
         <!-- jQuery Easing -->

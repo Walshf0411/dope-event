@@ -12,20 +12,29 @@
 */
 
 Route::get('/', function () {
-    return view('index');
-});
+    return view('home');
+})->name('home');
+
 Route::get('/vacation', function () {
     return view('vacation');
-});
+})->name('vacation');
+
 Route::get('/blog', function () {
     return view('blog');
-});
+})->name('blog');
+
 Route::get('/car', function () {
     return view('car');
-});
+})->name('car');
+
 Route::get('/flight', function () {
     return view('flight');
-});
+})->name('flight');
+
 Route::get('/hotel', function () {
     return view('hotel');
-});
+})->name('hotel');
+
+Route::get('/contact', function () {
+    return view('contact');
+})->name('contact');
